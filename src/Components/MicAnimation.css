@@ -1,0 +1,52 @@
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse-ring {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 5px solid #ff3d7f;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  animation: pulsate infinite 2s;
+}
+.pulsate {
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.inner {
+  background-color: #ff3d7f;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 50%;
+}
+
+.mic {
+  color: white;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
